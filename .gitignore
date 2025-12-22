@@ -1,0 +1,14 @@
+# Ignorar a pasta de build do CMake (onde ficam os temporários e downloads)
+build/
+cmake-build-debug/
+
+# Ignorar arquivos do VS Code (configurações locais suas)
+.vscode/
+
+# Ignorar executáveis compilados (gerados pelo compilador)
+RPG
+*.o
+*.out
+
+# Ignorar arquivos do sistema operacional
+.DS_Store
