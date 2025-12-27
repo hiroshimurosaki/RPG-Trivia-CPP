@@ -21,6 +21,13 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(ImGui)
 
+FetchContent_Declare(
+    json
+    GIT_REPOSITORY https://github.com/nlohmann/json
+    GIT_TAG v3.11.2
+)
+FetchContent_MakeAvailable(json)
+
 # 2.2. Configurar o ImGui-SFML
 # [CORREÇÃO 1] Diz onde o ImGui original foi baixado
 set(IMGUI_DIR ${imgui_SOURCE_DIR})
@@ -43,4 +50,5 @@ target_link_libraries(MeuJogo
     PRIVATE 
     sfml-graphics sfml-window sfml-system sfml-audio # SFML
     ImGui-SFML::ImGui-SFML                           # ImGui Integrado
+    nlohmann_json::nlohmann_json
 )

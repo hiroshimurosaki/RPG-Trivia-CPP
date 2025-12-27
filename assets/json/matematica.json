@@ -1,0 +1,22 @@
+{
+  "category": "Matematica",
+  "questions": [
+    {
+      "id": 1001,
+      "subtheme": "Geometria",
+      "type": "multiple_choice",
+      "difficulty": 1,
+      "text": "Qual a soma dos ângulos internos de um triângulo?",
+      "options": ["180", "360", "90", "270"],
+      "correct_index": 0
+    },
+    {
+      "id": 1002,
+      "subtheme": "Algebra",
+      "type": "text_input",
+      "difficulty": 2,
+      "text": "Resolva para x: 2x + 10 = 20",
+      "valid_answers": ["5"]
+    }
+  ]
+}
