@@ -1,0 +1,185 @@
+{
+  "category": "3. Biologia",
+  "questions": [
+    {
+      "id": 30001,
+      "subtheme": "Reino Animal e Zoologia",
+      "question_type": "text",
+      "difficulty": 4,
+      "text": "Qual é o nome científico da espécie de leão africano?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Panthera tigris",
+        "Panthera leo",
+        "Panthera pardus",
+        "Acinonyx jubatus"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": 30002,
+      "subtheme": "Reino Animal e Zoologia",
+      "question_type": "text",
+      "difficulty": 6,
+      "text": "Quantas patas tem a maioria dos insetos?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "6"
+      ]
+    },
+    {
+      "id": 30003,
+      "subtheme": "Reino Animal e Zoologia",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Qual destes animais é um mamífero aquático conhecido por sua inteligência e uso de ecolocalização?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Tubarão-baleia",
+        "Golfinho",
+        "Baleia azul",
+        "Lula-gigante"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": 30004,
+      "subtheme": "Reino Animal e Zoologia",
+      "question_type": "text",
+      "difficulty": 7,
+      "text": "Qual é o período de gestação aproximado de um elefante africano?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "22"
+      ]
+    },
+    {
+      "id": 30005,
+      "subtheme": "Reino Animal e Zoologia",
+      "question_type": "text",
+      "difficulty": 3,
+      "text": "O que significa a palavra 'hemimetabolismo' em relação ao ciclo de vida de alguns insetos?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Metamorfose completa com ovo, larva, pupa e adulto",
+        "Desenvolvimento através de mudas sem estágio de pupa (ex: gafanhotos)",
+        "Ausência de metamorfose, o filhote é semelhante ao adulto",
+        "Ciclo de vida exclusivamente aquático"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": 30006,
+      "subtheme": "Reino Animal e Zoologia",
+      "question_type": "text",
+      "difficulty": 8,
+      "text": "Qual a temperatura corporal aproximada de um réptil ectotérmico em um dia ensolarado?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35"
+      ]
+    },
+    {
+      "id": 30007,
+      "subtheme": "Reino Animal e Zoologia",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Qual classe de animais inclui as cobras, lagartos, tartarugas e crocodilos?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Aves",
+        "Mamíferos",
+        "Anfíbios",
+        "Répteis"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": 30008,
+      "subtheme": "Reino Animal e Zoologia",
+      "question_type": "text",
+      "difficulty": 7,
+      "text": "Qual a profundidade máxima aproximada que um cachalote pode atingir em mergulhos para caçar?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "2000",
+        "2200",
+        "2500"
+      ]
+    },
+    {
+      "id": 30009,
+      "subtheme": "Reino Animal e Zoologia",
+      "question_type": "text",
+      "difficulty": 4,
+      "text": "Que grupo de animais é caracterizado por ter um exoesqueleto e ser segmentado?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Peixes",
+        "Anelídeos",
+        "Moluscos",
+        "Artrópodes"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": 30010,
+      "subtheme": "Reino Animal e Zoologia",
+      "question_type": "text",
+      "difficulty": 6,
+      "text": "Qual o nome da simbiose onde ambos os organismos se beneficiam?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Parasitismo",
+        "Comensalismo",
+        "Mutualismo",
+        "Predação"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": 30011,
+      "subtheme": "Reino Animal e Zoologia",
+      "question_type": "text",
+      "difficulty": 8,
+      "text": "Qual a velocidade máxima aproximada que um guepardo pode atingir em uma corrida curta?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "100",
+        "110",
+        "112"
+      ]
+    },
+    {
+      "id": 30012,
+      "subtheme": "Reino Animal e Zoologia",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "O que são animais endótermicos?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Animais que dependem de fontes externas de calor para regular sua temperatura",
+        "Animais que geram seu próprio calor corporal internamente",
+        "Animais que vivem exclusivamente em ambientes frios",
+        "Animais que perdem calor para o ambiente"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": 30013,
+      "subtheme": "Reino Animal e Zoologia",
+      "question_type": "text",
+      "difficulty": 7,
+      "text": "Qual o número aproximado de vértebras em uma girafa adulta no pescoço?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "7"
+      ]
+    }
+  ]
+}

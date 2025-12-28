@@ -1,0 +1,186 @@
+{
+  "category": "6. História",
+  "questions": [
+    {
+      "id": 60001,
+      "subtheme": "História Antiga e Clássica",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Qual o nome da lendária cidade fundada por Rômulo e Remo?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Atenas",
+        "Esparta",
+        "Roma",
+        "Cartago"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": 60002,
+      "subtheme": "História Antiga e Clássica",
+      "question_type": "text",
+      "difficulty": 6,
+      "text": "Em que ano ocorreu a Queda do Império Romano do Ocidente, marcando o fim da Antiguidade Clássica para muitos historiadores?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "476"
+      ]
+    },
+    {
+      "id": 60003,
+      "subtheme": "História Antiga e Clássica",
+      "question_type": "text",
+      "difficulty": 4,
+      "text": "Quem foi o famoso filósofo grego mestre de Alexandre, o Grande?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Sócrates",
+        "Platão",
+        "Aristóteles",
+        "Pitágoras"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": 60004,
+      "subtheme": "História Antiga e Clássica",
+      "question_type": "text",
+      "difficulty": 7,
+      "text": "Qual foi a principal causa das Guerras Púnicas entre Roma e Cartago?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Disputa por terras na Gália",
+        "Controle do Mar Mediterrâneo",
+        "Rivalidade religiosa",
+        "Conflito por rotas comerciais no Oriente"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": 60005,
+      "subtheme": "História Antiga e Clássica",
+      "question_type": "text",
+      "difficulty": 3,
+      "text": "Qual civilização antiga construiu as pirâmides de Gizé?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Mesopotâmica",
+        "Grega",
+        "Romana",
+        "Egípcia"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": 60006,
+      "subtheme": "História Antiga e Clássica",
+      "question_type": "text",
+      "difficulty": 8,
+      "text": "Em que ano o imperador Constantino emitiu o Édito de Milão, garantindo a tolerância religiosa no Império Romano?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "313"
+      ]
+    },
+    {
+      "id": 60007,
+      "subtheme": "História Antiga e Clássica",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Qual o nome do código de leis mais antigo conhecido da Mesopotâmia?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Lei das Doze Tábuas",
+        "Código de Hamurabi",
+        "Estatutos de Roma",
+        "Edito de Caracala"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": 60008,
+      "subtheme": "História Antiga e Clássica",
+      "question_type": "text",
+      "difficulty": 6,
+      "text": "Quem foi o general cartaginês que liderou um exército com elefantes através dos Alpes para invadir a Itália?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Aníbal",
+        "Scipião Africano",
+        "Hamilcar Barca",
+        "Hasdrúbal"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": 60009,
+      "subtheme": "História Antiga e Clássica",
+      "question_type": "text",
+      "difficulty": 7,
+      "text": "Qual a cidade grega conhecida por sua democracia direta e pela Liga de Delos?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Corinto",
+        "Tebas",
+        "Esparta",
+        "Atenas"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": 60010,
+      "subtheme": "História Antiga e Clássica",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Em que ano ocorreu a Batalha de Maratona, uma importante vitória grega contra os persas?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "490"
+      ]
+    },
+    {
+      "id": 60011,
+      "subtheme": "História Antiga e Clássica",
+      "question_type": "text",
+      "difficulty": 4,
+      "text": "Qual o nome do imperador romano que dividiu o império em Ocidente e Oriente no final do século III d.C.?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Constantino",
+        "Diocleciano",
+        "Augusto",
+        "Nero"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": 60012,
+      "subtheme": "História Antiga e Clássica",
+      "question_type": "text",
+      "difficulty": 8,
+      "text": "Qual o nome da famosa biblioteca na cidade de Alexandria, que foi um centro de conhecimento no mundo antigo?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Biblioteca de Pérgamo",
+        "Biblioteca de Assurbanípal",
+        "Biblioteca de Alexandria",
+        "Biblioteca de Roma"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": 60013,
+      "subtheme": "História Antiga e Clássica",
+      "question_type": "text",
+      "difficulty": 6,
+      "text": "Qual o período aproximado em que floresceu a civilização minoica em Creta?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "2700",
+        "2000",
+        "1450"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "category": "2. Física",
+  "questions": [
+    {
+      "id": 20001,
+      "subtheme": "Mecânica Clássica",
+      "question_type": "text",
+      "difficulty": 3,
+      "text": "Qual lei de Newton descreve a relação entre força, massa e aceleração?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Primeira Lei de Newton (Lei da Inércia)",
+        "Segunda Lei de Newton (Princípio Fundamental da Dinâmica)",
+        "Terceira Lei de Newton (Lei da Ação e Reação)",
+        "Lei da Gravitação Universal"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": 20002,
+      "subtheme": "Mecânica Clássica",
+      "question_type": "text",
+      "difficulty": 2,
+      "text": "Se um objeto está em repouso, qual é a sua velocidade?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "0"
+      ]
+    },
+    {
+      "id": 20003,
+      "subtheme": "Mecânica Clássica",
+      "question_type": "text",
+      "difficulty": 4,
+      "text": "Qual grandeza física é a taxa de variação do momento linear de um corpo em relação ao tempo?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Velocidade",
+        "Aceleração",
+        "Força",
+        "Energia"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": 20004,
+      "subtheme": "Mecânica Clássica",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Um bloco de 10 kg é empurrado com uma força resultante de 50 N. Qual é a aceleração do bloco em m/s²?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "5"
+      ]
+    },
+    {
+      "id": 20005,
+      "subtheme": "Mecânica Clássica",
+      "question_type": "text",
+      "difficulty": 3,
+      "text": "Qual princípio afirma que, em um sistema isolado, a quantidade total de movimento permanece constante?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Conservação de Energia",
+        "Conservação de Momento",
+        "Conservação de Massa",
+        "Princípio da Pascal"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": 20006,
+      "subtheme": "Mecânica Clássica",
+      "question_type": "text",
+      "difficulty": 4,
+      "text": "Qual é o nome dado à força que se opõe ao movimento relativo entre duas superfícies em contato?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Força Normal",
+        "Força Gravitacional",
+        "Força de Atrito",
+        "Força Tensional"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": 20007,
+      "subtheme": "Mecânica Clássica",
+      "question_type": "text",
+      "difficulty": 6,
+      "text": "Um projétil é lançado horizontalmente de uma altura de 100 metros com uma velocidade inicial de 20 m/s. Desprezando a resistência do ar e usando g = 9.8 m/s², qual o tempo aproximado de voo do projétil em segundos?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "4.5",
+        "4.51",
+        "4.52"
+      ]
+    },
+    {
+      "id": 20008,
+      "subtheme": "Mecânica Clássica",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Qual é a unidade padrão do Sistema Internacional (SI) para a energia?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Watt (W)",
+        "Joule (J)",
+        "Newton (N)",
+        "Pascal (Pa)"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": 20009,
+      "subtheme": "Mecânica Clássica",
+      "question_type": "text",
+      "difficulty": 3,
+      "text": "O que mede a quantidade de matéria em um objeto?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Peso",
+        "Massa",
+        "Volume",
+        "Densidade"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": 20010,
+      "subtheme": "Mecânica Clássica",
+      "question_type": "text",
+      "difficulty": 7,
+      "text": "Um carro de massa 1200 kg viaja a 25 m/s. Qual é a sua energia cinética em Joules?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "375000"
+      ]
+    },
+    {
+      "id": 20011,
+      "subtheme": "Mecânica Clássica",
+      "question_type": "text",
+      "difficulty": 4,
+      "text": "Qual a terceira lei de Newton, conhecida como Lei da Ação e Reação, implica em relação às forças?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "A força resultante em um corpo é zero se ele estiver em repouso ou em movimento uniforme.",
+        "Para toda ação, há sempre uma reação oposta e de igual intensidade.",
+        "A aceleração de um objeto é diretamente proporcional à força resultante e inversamente proporcional à sua massa.",
+        "A taxa de variação do momento linear de um objeto é igual à força resultante aplicada a ele."
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": 20012,
+      "subtheme": "Mecânica Clássica",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Um objeto de 2 kg em repouso é acelerado a 3 m/s². Qual a força resultante aplicada a ele em Newtons?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "6"
+      ]
+    },
+    {
+      "id": 20013,
+      "subtheme": "Mecânica Clássica",
+      "question_type": "text",
+      "difficulty": 6,
+      "text": "O que é o conceito de trabalho em física, em termos de força e deslocamento?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "É a energia total de um sistema.",
+        "É o produto da força aplicada por um objeto e a distância percorrida na direção da força.",
+        "É a taxa com que a energia é transferida ou convertida.",
+        "É a resistência de um objeto à mudança de seu estado de movimento."
+      ],
+      "correct_index": 1
+    }
+  ]
+}

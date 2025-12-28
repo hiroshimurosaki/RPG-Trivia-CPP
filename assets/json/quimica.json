@@ -1,0 +1,196 @@
+{
+  "category": "4. Química",
+  "questions": [
+    {
+      "id": 40001,
+      "subtheme": "Tabela Periódica e Elementos",
+      "question_type": "text",
+      "difficulty": 3,
+      "text": "Qual é o número atômico do elemento Oxigênio?",
+      "answer_type": "text_input",
+      "options": null,
+      "correct_index": null,
+      "valid_answers": [
+        "8"
+      ]
+    },
+    {
+      "id": 40002,
+      "subtheme": "Tabela Periódica e Elementos",
+      "question_type": "text",
+      "difficulty": 4,
+      "text": "Qual elemento químico é representado pelo símbolo 'Fe'?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Flúor",
+        "Ferro",
+        "Fósforo",
+        "Frâncio"
+      ],
+      "correct_index": 1,
+      "valid_answers": null
+    },
+    {
+      "id": 40003,
+      "subtheme": "Tabela Periódica e Elementos",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Qual é a massa atômica aproximada do elemento Carbono (considerando o isótopo mais comum)?",
+      "answer_type": "text_input",
+      "options": null,
+      "correct_index": null,
+      "valid_answers": [
+        "12"
+      ]
+    },
+    {
+      "id": 40004,
+      "subtheme": "Tabela Periódica e Elementos",
+      "question_type": "text",
+      "difficulty": 6,
+      "text": "Em qual grupo da Tabela Periódica se encontra o Sódio (Na)?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Grupo 1 (Metais Alcalinos)",
+        "Grupo 2 (Metais Alcalinoterrosos)",
+        "Grupo 17 (Halogênios)",
+        "Grupo 18 (Gases Nobres)"
+      ],
+      "correct_index": 0,
+      "valid_answers": null
+    },
+    {
+      "id": 40005,
+      "subtheme": "Tabela Periódica e Elementos",
+      "question_type": "text",
+      "difficulty": 4,
+      "text": "Qual é o símbolo químico do elemento Hélio?",
+      "answer_type": "text_input",
+      "options": null,
+      "correct_index": null,
+      "valid_answers": [
+        "He"
+      ]
+    },
+    {
+      "id": 40006,
+      "subtheme": "Tabela Periódica e Elementos",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Qual é o elemento químico com o maior número atômico conhecido atualmente?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Urânio",
+        "Plutônio",
+        "Oganessônio",
+        "Radium"
+      ],
+      "correct_index": 2,
+      "valid_answers": null
+    },
+    {
+      "id": 40007,
+      "subtheme": "Tabela Periódica e Elementos",
+      "question_type": "text",
+      "difficulty": 7,
+      "text": "Quantos prótons um átomo de Alumínio possui?",
+      "answer_type": "text_input",
+      "options": null,
+      "correct_index": null,
+      "valid_answers": [
+        "13"
+      ]
+    },
+    {
+      "id": 40008,
+      "subtheme": "Tabela Periódica e Elementos",
+      "question_type": "text",
+      "difficulty": 6,
+      "text": "Qual destes elementos é um metal de transição?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Potássio",
+        "Cálcio",
+        "Cobalto",
+        "Argônio"
+      ],
+      "correct_index": 2,
+      "valid_answers": null
+    },
+    {
+      "id": 40009,
+      "subtheme": "Tabela Periódica e Elementos",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "O elemento mais abundante na crosta terrestre é:",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Silício",
+        "Alumínio",
+        "Ferro",
+        "Oxigênio"
+      ],
+      "correct_index": 3,
+      "valid_answers": null
+    },
+    {
+      "id": 40010,
+      "subtheme": "Tabela Periódica e Elementos",
+      "question_type": "text",
+      "difficulty": 7,
+      "text": "Quantos elétrons um átomo de Cloro neutro possui?",
+      "answer_type": "text_input",
+      "options": null,
+      "correct_index": null,
+      "valid_answers": [
+        "17"
+      ]
+    },
+    {
+      "id": 40011,
+      "subtheme": "Tabela Periódica e Elementos",
+      "question_type": "text",
+      "difficulty": 8,
+      "text": "Qual é o nome do elemento químico com o símbolo 'W'?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Wolfram",
+        "Tungstênio",
+        "Prata",
+        "Ouro"
+      ],
+      "correct_index": 1,
+      "valid_answers": null
+    },
+    {
+      "id": 40012,
+      "subtheme": "Tabela Periódica e Elementos",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Qual o número atômico do elemento que compõe o gás carbônico (CO2)?",
+      "answer_type": "text_input",
+      "options": null,
+      "correct_index": null,
+      "valid_answers": [
+        "6",
+        "8"
+      ]
+    },
+    {
+      "id": 40013,
+      "subtheme": "Tabela Periódica e Elementos",
+      "question_type": "text",
+      "difficulty": 6,
+      "text": "Os elementos do Grupo 18 da Tabela Periódica são conhecidos como:",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Halogênios",
+        "Metais Alcalinos",
+        "Gases Nobres",
+        "Calcogênios"
+      ],
+      "correct_index": 2,
+      "valid_answers": null
+    }
+  ]
+}

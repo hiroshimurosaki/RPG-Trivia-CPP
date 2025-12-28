@@ -1,0 +1,185 @@
+{
+  "category": "5. Geografia",
+  "questions": [
+    {
+      "id": 50001,
+      "subtheme": "Capitais e Bandeiras",
+      "question_type": "text",
+      "difficulty": 3,
+      "text": "Qual é a capital da Austrália?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Sydney",
+        "Melbourne",
+        "Canberra",
+        "Brisbane"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": 50002,
+      "subtheme": "Capitais e Bandeiras",
+      "question_type": "text",
+      "difficulty": 2,
+      "text": "Qual país tem a bandeira com a folha de bordo?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Austrália",
+        "Canadá",
+        "Nova Zelândia",
+        "Irlanda"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": 50003,
+      "subtheme": "Capitais e Bandeiras",
+      "question_type": "text",
+      "difficulty": 4,
+      "text": "Qual é a capital do Brasil?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Rio de Janeiro",
+        "São Paulo",
+        "Brasília",
+        "Salvador"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": 50004,
+      "subtheme": "Capitais e Bandeiras",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Quantos estados compõem os Estados Unidos da América?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "50"
+      ]
+    },
+    {
+      "id": 50005,
+      "subtheme": "Capitais e Bandeiras",
+      "question_type": "text",
+      "difficulty": 3,
+      "text": "Qual capital europeia é famosa pela Torre Eiffel?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Berlim",
+        "Roma",
+        "Madri",
+        "Paris"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": 50006,
+      "subtheme": "Capitais e Bandeiras",
+      "question_type": "text",
+      "difficulty": 6,
+      "text": "Quantos continentes existem no mundo?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "7",
+        "7"
+      ]
+    },
+    {
+      "id": 50007,
+      "subtheme": "Capitais e Bandeiras",
+      "question_type": "text",
+      "difficulty": 4,
+      "text": "Qual é a capital do Japão?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Osaka",
+        "Quioto",
+        "Tóquio",
+        "Nagoya"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": 50008,
+      "subtheme": "Capitais e Bandeiras",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Em que ano o Brasil proclamou sua independência?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "1822"
+      ]
+    },
+    {
+      "id": 50009,
+      "subtheme": "Capitais e Bandeiras",
+      "question_type": "text",
+      "difficulty": 3,
+      "text": "Qual país africano tem a bandeira com um triângulo verde e vermelho?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Nigéria",
+        "Gana",
+        "África do Sul",
+        "Marrocos"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": 50010,
+      "subtheme": "Capitais e Bandeiras",
+      "question_type": "text",
+      "difficulty": 7,
+      "text": "Qual é a capital da Rússia?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "São Petersburgo",
+        "Moscou",
+        "Novosibirsk",
+        "Ecaterimburgo"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": 50011,
+      "subtheme": "Capitais e Bandeiras",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Quantos fusos horários existem na Rússia continental?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "11"
+      ]
+    },
+    {
+      "id": 50012,
+      "subtheme": "Capitais e Bandeiras",
+      "question_type": "text",
+      "difficulty": 4,
+      "text": "Qual é a capital da Espanha?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Barcelona",
+        "Valência",
+        "Sevilha",
+        "Madri"
+      ],
+      "correct_index": 3
+    },
+    {
+      "id": 50013,
+      "subtheme": "Capitais e Bandeiras",
+      "question_type": "text",
+      "difficulty": 6,
+      "text": "Qual país tem a bandeira com uma estrela vermelha e um círculo amarelo?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "China",
+        "Vietnã",
+        "Coreia do Norte",
+        "Filipinas"
+      ],
+      "correct_index": 1
+    }
+  ]
+}

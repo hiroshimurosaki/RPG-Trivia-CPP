@@ -1,0 +1,184 @@
+{
+  "category": "9. Variedades",
+  "questions": [
+    {
+      "id": 90001,
+      "subtheme": "Literatura",
+      "question_type": "text",
+      "difficulty": 4,
+      "text": "Qual o nome do autor que escreveu 'Dom Quixote de la Mancha'?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "William Shakespeare",
+        "Miguel de Cervantes",
+        "Gabriel García Márquez",
+        "Fernando Pessoa"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": 90002,
+      "subtheme": "Literatura",
+      "question_type": "text",
+      "difficulty": 6,
+      "text": "Em que ano foi publicado 'Os Lusíadas' de Camões?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "1572"
+      ]
+    },
+    {
+      "id": 90003,
+      "subtheme": "Literatura",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Qual destes autores é conhecido por escrever contos de terror?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Jane Austen",
+        "Edgar Allan Poe",
+        "Charles Dickens",
+        "Leo Tolstoy"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": 90004,
+      "subtheme": "Literatura",
+      "question_type": "text",
+      "difficulty": 3,
+      "text": "Quantos livros compõem a saga 'Harry Potter' escrita por J.K. Rowling?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "7"
+      ]
+    },
+    {
+      "id": 90005,
+      "subtheme": "Literatura",
+      "question_type": "text",
+      "difficulty": 7,
+      "text": "Quem é o autor de 'Cem Anos de Solidão'?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Jorge Luis Borges",
+        "Mario Vargas Llosa",
+        "Gabriel García Márquez",
+        "Julio Cortázar"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": 90006,
+      "subtheme": "Literatura",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Qual o gênero literário de 'O Senhor dos Anéis'?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Ficção Científica",
+        "Romance Histórico",
+        "Fantasia Épica",
+        "Realismo Mágico"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": 90007,
+      "subtheme": "Literatura",
+      "question_type": "text",
+      "difficulty": 6,
+      "text": "Em que país se passa a história de 'Orgulho e Preconceito' de Jane Austen?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "França",
+        "Estados Unidos",
+        "Inglaterra",
+        "Alemanha"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": 90008,
+      "subtheme": "Literatura",
+      "question_type": "text",
+      "difficulty": 4,
+      "text": "Qual é o nome da personagem principal em 'Alice no País das Maravilhas'?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Wendy",
+        "Dorothy",
+        "Alice",
+        "Joana"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": 90009,
+      "subtheme": "Literatura",
+      "question_type": "text",
+      "difficulty": 8,
+      "text": "Quantas linhas tem um soneto tradicional?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "14"
+      ]
+    },
+    {
+      "id": 90010,
+      "subtheme": "Literatura",
+      "question_type": "text",
+      "difficulty": 7,
+      "text": "Quem escreveu 'A Divina Comédia'?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Dante Alighieri",
+        "Virgílio",
+        "Francesco Petrarca",
+        "Giovanni Boccaccio"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": 90011,
+      "subtheme": "Literatura",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Qual é o nome do navio em 'Moby Dick'?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Pequod",
+        "Bounty",
+        "Mayflower",
+        "Enterprise"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": 90012,
+      "subtheme": "Literatura",
+      "question_type": "text",
+      "difficulty": 8,
+      "text": "Em que ano nasceu Machado de Assis?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "1839"
+      ]
+    },
+    {
+      "id": 90013,
+      "subtheme": "Literatura",
+      "question_type": "text",
+      "difficulty": 9,
+      "text": "Qual o nome do poeta que escreveu 'A Canção de Rolando'?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Trobador anônimo",
+        "Chrétien de Troyes",
+        "Jean Bodel",
+        "Alexandre Dumas"
+      ],
+      "correct_index": 0
+    }
+  ]
+}

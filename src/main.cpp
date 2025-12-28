@@ -7,18 +7,30 @@
 #include <cstdlib> 
 #include <cmath>
 #include <ctime>   
+#include <iostream>
+
+// --- ESTADO DO JOGO  ---
+struct BattleState {
+    std::vector<Character> allies;   // Time da Esquerda
+    std::vector<Character> enemies;  // Time da Direita
+    
+    // Quem está jogando agora? (0 = Player 1, etc...)
+    int turnIndex = 0; 
+    bool isPlayerTurn = true; 
+};
+
+BattleState battleData; // Variável global do estado
 
 // Variáveis Globais de Estado
 GameState currentState = GameState::LanguageSelect; 
 int selectedLanguage = 0; 
 RpgClass currentClass;    
 
-// --- VARIÁVEIS DE UI E ANIMAÇÃO ---
+// Variáveis de UI e Animação
 char inputBuffer[256] = ""; 
 float textTimer = 0.0f;     
 int visibleChars = 0;       
 const float TEXT_SPEED = 0.03f; 
-
 int lastQuestionId = -1;
 
 // Configuração de Janela
@@ -27,15 +39,16 @@ sf::VideoMode desktopMode = sf::VideoMode::getDesktopMode();
 const unsigned int W_WIDTH = 1280;
 const unsigned int W_HEIGHT = 720;
 
+// Variáveis Globais de Largura (para o layout)
+float panelLeftW, panelCenterW, panelRightW;
+
 float currentScale = 0.0f;
 float targetScale = 1.0f;
 
+// --- FUNÇÕES AUXILIARES ---
+
 void Update(float dt) {
     currentScale += (targetScale - currentScale) * 10.0f * dt;
-}
-
-void DrawUI() {
-    ImGui::SetWindowFontScale(currentScale); 
 }
 
 void ToggleFullscreen(sf::RenderWindow& window) {
@@ -49,38 +62,101 @@ void ToggleFullscreen(sf::RenderWindow& window) {
     }
 
     window.setFramerateLimit(60);
-    ImGui::SFML::Init(window);
+    (void)ImGui::SFML::Init(window);
 }
 
+// 1. Desenha o Fundo (Layout 25-50-25)
 void DrawGameBackground(sf::RenderWindow& window) {
     sf::Vector2u winSize = window.getSize();
     float w = static_cast<float>(winSize.x);
     float h = static_cast<float>(winSize.y);
 
-    float leftPanelW = w * 0.15f;
-    float rightPanelW = w * 0.20f;
-    float centerPanelW = w - leftPanelW - rightPanelW;
+    panelLeftW = w * 0.25f;
+    panelRightW = w * 0.25f;
+    panelCenterW = w * 0.50f; 
 
-    // Painel Esquerdo (Amarelo)
-    sf::RectangleShape pLeft(sf::Vector2f(leftPanelW, h));
+    // Esquerda (Amarelo)
+    sf::RectangleShape pLeft(sf::Vector2f(panelLeftW, h));
     pLeft.setPosition(0, 0);
     pLeft.setFillColor(sf::Color(240, 230, 140)); 
     window.draw(pLeft);
 
-    // Painel Direito (Vermelho)
-    sf::RectangleShape pRight(sf::Vector2f(rightPanelW, h));
-    pRight.setPosition(w - rightPanelW, 0);
+    // Direita (Vermelho)
+    sf::RectangleShape pRight(sf::Vector2f(panelRightW, h));
+    pRight.setPosition(w - panelRightW, 0);
     pRight.setFillColor(sf::Color(220, 50, 50)); 
     window.draw(pRight);
 
-    // Painel Central (Rosa)
-    sf::RectangleShape pCenter(sf::Vector2f(centerPanelW, h));
-    pCenter.setPosition(leftPanelW, 0);
+    // Centro (Rosa)
+    sf::RectangleShape pCenter(sf::Vector2f(panelCenterW, h));
+    pCenter.setPosition(panelLeftW, 0);
     pCenter.setFillColor(sf::Color(220, 130, 180)); 
     window.draw(pCenter);
 }
 
-// Funções de Tela
+// 2. Desenha HUD sobre a cabeça (Vida e Buffs)
+void DrawUnitHUD(Character& ch, sf::Vector2f charPos, float scale) {
+    // Posição da HUD: Acima da cabeça do boneco
+    ImVec2 hudPos = ImVec2(charPos.x - 60, charPos.y - (40 * scale) - 50); 
+    
+    ImGui::SetNextWindowPos(hudPos);
+    ImGui::Begin(std::string("##HUD_" + ch.name).c_str(), nullptr, 
+        ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_NoBackground | ImGuiWindowFlags_AlwaysAutoResize);
+    
+    // Nome
+    ImGui::SetCursorPosX(30); 
+    ImGui::Text("%s", ch.name.c_str());
+
+    // Barra de HP
+    float hpPercent = (float)ch.currentHp / (float)ch.maxHp;
+    ImVec4 hpColor = (hpPercent < 0.3f) ? ImVec4(1,0,0,1) : ImVec4(0,1,0,1);
+    
+    ImGui::PushStyleColor(ImGuiCol_PlotHistogram, hpColor);
+    char overlay[32];
+    sprintf(overlay, "%d/%d", ch.currentHp, ch.maxHp);
+    ImGui::ProgressBar(hpPercent, ImVec2(120, 15), overlay);
+    ImGui::PopStyleColor();
+
+    // Buffs e Debuffs
+    if (!ch.buffs.empty()) {
+        for (const auto& buff : ch.buffs) {
+            ImVec4 buffColor = buff.isDebuff ? ImVec4(1, 0, 0, 1) : ImVec4(0, 1, 0, 1);
+            ImGui::PushStyleColor(ImGuiCol_Button, buffColor);
+            ImGui::Button("##b", ImVec2(10, 10)); // Ícone
+            if (ImGui::IsItemHovered()) ImGui::SetTooltip("%s (%d turnos)", buff.name.c_str(), buff.turnsRemaining);
+            ImGui::PopStyleColor();
+            ImGui::SameLine();
+        }
+    }
+    ImGui::End();
+}
+
+// 3. Renderiza Time (Distribuição Vertical)
+void RenderTeam(sf::RenderWindow& window, std::vector<Character>& team, float panelX, float panelW, float winHeight) {
+    if (team.empty()) return;
+
+    // Calcula espaço vertical para cada um
+    float gap = winHeight / (team.size() + 1);
+    
+    // Escala dinâmica
+    float scale = (team.size() > 3) ? 1.5f : 2.5f; 
+
+    for (size_t i = 0; i < team.size(); i++) {
+        float posX = panelX + (panelW / 2); // Centro do painel
+        float posY = gap * (i + 1);         // Espaçamento igual
+
+        // 1. Desenha Boneco e Itens (SFML)
+        team[i].Draw(window, sf::Vector2f(posX, posY), scale);
+
+        // 2. Desenha UI (ImGui)
+        if (currentState == GameState::Playing) {
+             DrawUnitHUD(team[i], sf::Vector2f(posX, posY), scale);
+        }
+    }
+}
+
+// --- FUNÇÕES DE TELAS (MENUS) ---
+
 void ShowLanguageScreen(sf::RenderWindow& window) {
     ImGui::SetNextWindowPos(ImVec2(window.getSize().x * 0.5f, window.getSize().y * 0.5f), ImGuiCond_Always, ImVec2(0.6f, 0.6f));
     ImGui::Begin("Language", nullptr, ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_AlwaysAutoResize);
@@ -158,11 +234,14 @@ bool CheckAnswer(const std::string& userInput, const std::vector<std::string>& v
     return false;
 }
 
+// 4. Interface de Batalha (Perguntas)
 void ShowBattleUI(sf::RenderWindow& window, const Question& q, float dt, float timeTotal) {
     sf::Vector2u winSize = window.getSize();
     float w = static_cast<float>(winSize.x);
-    float leftPanelW = w * 0.15f;
-    float centerPanelW = w * 0.65f; 
+    
+    // ATUALIZADO PARA NOVO LAYOUT
+    float leftPanelW = w * 0.25f; 
+    float centerPanelW = w * 0.50f; 
 
     if (q.id != lastQuestionId) {
         lastQuestionId = q.id;
@@ -211,8 +290,16 @@ void ShowBattleUI(sf::RenderWindow& window, const Question& q, float dt, float t
                 for (size_t i = 0; i < q.options.size(); i++) {
                     std::string label = std::string(1, 'A' + i) + ") " + q.options[i];
                     if (ImGui::Button(label.c_str(), ImVec2(-1, 60))) {
-                        if (i == q.correctIndex) { /* Acertou! */ } 
-                        else { /* Errou! */ }
+                        if (i == q.correctIndex) { 
+                             ImGui::OpenPopup("Acertou!");
+                             // Exemplo: Causa dano no primeiro inimigo
+                             if (!battleData.enemies.empty()) battleData.enemies[0].TakeDamage(25);
+                        } 
+                        else { 
+                             ImGui::OpenPopup("Errou!");
+                             // Exemplo: Causa dano no primeiro aliado
+                             if (!battleData.allies.empty()) battleData.allies[0].TakeDamage(15);
+                        }
                     }
                     ImGui::Spacing();
                 }
@@ -227,8 +314,10 @@ void ShowBattleUI(sf::RenderWindow& window, const Question& q, float dt, float t
                 std::string sInput(inputBuffer);
                 if (CheckAnswer(sInput, q.validAnswers)) {
                      ImGui::OpenPopup("Acertou!");
+                     if (!battleData.enemies.empty()) battleData.enemies[0].TakeDamage(25);
                 } else {
                      ImGui::OpenPopup("Errou!");
+                     if (!battleData.allies.empty()) battleData.allies[0].TakeDamage(15);
                 }
             }
             if (ImGui::BeginPopup("Acertou!")) {
@@ -259,9 +348,50 @@ int main() {
     Question currentQuestion; 
 
     float totalTime = 0.0f;
-
     std::vector<RpgClass> allClasses = LoadClasses();
     sf::Clock deltaClock;
+
+    // --- SETUP VISUAL DOS TIMES (TESTE) ---
+    sf::Texture defaultTex;
+    defaultTex.create(64, 64);
+    sf::Uint8* pixels = new sf::Uint8[64 * 64 * 4];
+    for(int i=0; i<64*64*4; i++) pixels[i] = 255; 
+    defaultTex.update(pixels);
+
+    sf::Texture weaponTex;
+    weaponTex.create(10, 40);
+    sf::Uint8* wPixels = new sf::Uint8[10 * 40 * 4];
+    for(int i=0; i<10*40*4; i++) {
+         wPixels[i] = 0; wPixels[i+1] = 0; wPixels[i+2] = 0; wPixels[i+3] = 255; 
+    }
+    weaponTex.update(wPixels);
+
+    // Aliado 1
+    Character p1;
+    p1.Setup("Engenheiro", 100, sf::Color::Blue);
+    p1.EquipItem(EquipSlot::Weapon, weaponTex);
+    p1.AddBuff("Escudo", BuffType::Shield, 3, false);
+    p1.bodySprite.setTexture(defaultTex); // Define textura
+    p1.bodySprite.setOrigin(32, 32);      // Centraliza
+    battleData.allies.push_back(p1);
+
+    // Aliado 2
+    Character p2;
+    p2.Setup("Biologo", 80, sf::Color::Cyan);
+    p2.bodySprite.setTexture(defaultTex);
+    p2.bodySprite.setOrigin(32, 32);
+    battleData.allies.push_back(p2);
+
+    // Inimigos (3 Goblins)
+    for(int i=0; i<3; i++) {
+        Character en;
+        en.Setup("Goblin " + std::to_string(i+1), 50, sf::Color::Green);
+        en.bodySprite.setTexture(defaultTex);
+        en.bodySprite.setOrigin(32, 32);
+        en.AddBuff("Veneno", BuffType::Poison, 2, true);
+        battleData.enemies.push_back(en);
+    }
+    // --------------------------------------
 
     while (window.isOpen()) {
         sf::Event event;
@@ -275,7 +405,6 @@ int main() {
 
         sf::Time dtObj = deltaClock.restart();
         float dt = dtObj.asSeconds();
-        
         totalTime += dt;
 
         ImGui::SFML::Update(window, dtObj);
@@ -284,7 +413,12 @@ int main() {
         window.clear(sf::Color(30, 30, 30)); 
 
         if (currentState == GameState::Playing) {
+            // 1. Desenha Fundo
             DrawGameBackground(window);
+            
+            // 2. Renderiza Times (Dinamicamente)
+            RenderTeam(window, battleData.allies, 0, panelLeftW, (float)W_HEIGHT);
+            RenderTeam(window, battleData.enemies, W_WIDTH - panelRightW, panelRightW, (float)W_HEIGHT);
         }
 
         switch (currentState) {

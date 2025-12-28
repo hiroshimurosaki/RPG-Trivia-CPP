@@ -1,22 +1,160 @@
 {
-  "category": "Matematica",
+  "category": "1. Matemática",
   "questions": [
     {
-      "id": 1001,
+      "id": 10001,
       "subtheme": "Geometria",
-      "type": "multiple_choice",
-      "difficulty": 1,
-      "text": "Qual a soma dos ângulos internos de um triângulo?",
-      "options": ["180", "360", "90", "270"],
-      "correct_index": 0
+      "question_type": "text",
+      "difficulty": 3,
+      "text": "Qual é a área de um retângulo com 8 cm de comprimento e 5 cm de largura?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "40"
+      ]
     },
     {
-      "id": 1002,
-      "subtheme": "Algebra",
-      "type": "text_input",
+      "id": 10002,
+      "subtheme": "Geometria",
+      "question_type": "text",
+      "difficulty": 4,
+      "text": "Se o raio de um círculo é 7 metros, qual é a sua área? (Use π ≈ 3.14)",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "153.86"
+      ]
+    },
+    {
+      "id": 10003,
+      "subtheme": "Geometria",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Qual é o volume de um cubo com aresta de 3 cm?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "27"
+      ]
+    },
+    {
+      "id": 10004,
+      "subtheme": "Geometria",
+      "question_type": "text",
+      "difficulty": 6,
+      "text": "Um triângulo tem base de 10 cm e altura de 6 cm. Qual é a sua área?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "30"
+      ]
+    },
+    {
+      "id": 10005,
+      "subtheme": "Geometria",
+      "question_type": "text",
+      "difficulty": 7,
+      "text": "Qual é a distância entre os pontos (2, 3) e (5, 7) no plano cartesiano?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "5"
+      ]
+    },
+    {
+      "id": 10006,
+      "subtheme": "Geometria",
+      "question_type": "text",
       "difficulty": 2,
-      "text": "Resolva para x: 2x + 10 = 20",
-      "valid_answers": ["5"]
+      "text": "Qual é o perímetro de um quadrado com lado de 5 metros?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "20"
+      ]
+    },
+    {
+      "id": 10007,
+      "subtheme": "Geometria",
+      "question_type": "text",
+      "difficulty": 8,
+      "text": "Se a diagonal de um quadrado mede 10√2 cm, qual o comprimento do seu lado?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "10"
+      ]
+    },
+    {
+      "id": 10008,
+      "subtheme": "Geometria",
+      "question_type": "text",
+      "difficulty": 4,
+      "text": "Qual é o perímetro de um círculo cujo diâmetro mede 14 cm? (Use π ≈ 22/7)",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "44"
+      ]
+    },
+    {
+      "id": 10009,
+      "subtheme": "Geometria",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Quantos graus tem um ângulo reto?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "90"
+      ]
+    },
+    {
+      "id": 10010,
+      "subtheme": "Geometria",
+      "question_type": "text",
+      "difficulty": 6,
+      "text": "Qual é a área de um triângulo equilátero com lado medindo 6 cm? (Use √3 ≈ 1.73)",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "15.57"
+      ]
+    },
+    {
+      "id": 10011,
+      "subtheme": "Geometria",
+      "question_type": "text",
+      "difficulty": 3,
+      "text": "Qual é o nome da figura geométrica com 4 lados iguais e 4 ângulos retos?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Retângulo",
+        "Paralelogramo",
+        "Quadrado",
+        "Losango"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": 10012,
+      "subtheme": "Geometria",
+      "question_type": "text",
+      "difficulty": 4,
+      "text": "Qual é o nome do polígono com 5 lados?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Hexágono",
+        "Pentágono",
+        "Heptágono",
+        "Quadrilátero"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": 10013,
+      "subtheme": "Geometria",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Qual fórmula é utilizada para calcular a área de um triângulo?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "A = πr²",
+        "A = b * h",
+        "A = (b * h) / 2",
+        "A = 2πr"
+      ],
+      "correct_index": 2
     }
   ]
 }

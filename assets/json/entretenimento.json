@@ -1,0 +1,186 @@
+{
+  "category": "8. Entretenimento",
+  "questions": [
+    {
+      "id": 80001,
+      "subtheme": "Filmes e Cinema",
+      "question_type": "text",
+      "difficulty": 4,
+      "text": "Qual filme ganhou o Oscar de Melhor Filme em 2023?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Top Gun: Maverick",
+        "Avatar: O Caminho da Água",
+        "Tudo em Todo o Lugar ao Mesmo Tempo",
+        "Os Banshees de Inisherin"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": 80002,
+      "subtheme": "Filmes e Cinema",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Em que ano foi lançado o primeiro filme da saga Star Wars?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "1977"
+      ]
+    },
+    {
+      "id": 80003,
+      "subtheme": "Filmes e Cinema",
+      "question_type": "text",
+      "difficulty": 6,
+      "text": "Qual destes diretores é conhecido por seus filmes com elementos de fantasia sombria e um estilo visual único?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Christopher Nolan",
+        "Quentin Tarantino",
+        "Tim Burton",
+        "Steven Spielberg"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": 80004,
+      "subtheme": "Filmes e Cinema",
+      "question_type": "text",
+      "difficulty": 3,
+      "text": "Quantos filmes compõem a saga principal de Harry Potter nos cinemas?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "8"
+      ]
+    },
+    {
+      "id": 80005,
+      "subtheme": "Filmes e Cinema",
+      "question_type": "text",
+      "difficulty": 7,
+      "text": "Qual atriz interpretou a personagem Clarice Starling no filme 'O Silêncio dos Inocentes'?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Meryl Streep",
+        "Jodie Foster",
+        "Sigourney Weaver",
+        "Michelle Pfeiffer"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": 80006,
+      "subtheme": "Filmes e Cinema",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Qual é o nome do estúdio de animação responsável por filmes como 'Toy Story', 'Frozen' e 'O Rei Leão'?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "DreamWorks Animation",
+        "Pixar Animation Studios",
+        "Studio Ghibli",
+        "Walt Disney Animation Studios"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": 80007,
+      "subtheme": "Filmes e Cinema",
+      "question_type": "text",
+      "difficulty": 4,
+      "text": "Qual foi o primeiro filme de super-herói a ganhar o Oscar de Melhor Filme?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "O Cavaleiro das Trevas",
+        "Homem-Aranha no Aranhaverso",
+        "Pantera Negra",
+        "Superman: O Filme"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": 80008,
+      "subtheme": "Filmes e Cinema",
+      "question_type": "text",
+      "difficulty": 6,
+      "text": "Em que ano foi lançado o filme 'Jurassic Park', dirigido por Steven Spielberg?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "1993"
+      ]
+    },
+    {
+      "id": 80009,
+      "subtheme": "Filmes e Cinema",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Qual cineasta dirigiu a trilogia 'O Senhor dos Anéis'?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Christopher Nolan",
+        "Peter Jackson",
+        "James Cameron",
+        "Ridley Scott"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": 80010,
+      "subtheme": "Filmes e Cinema",
+      "question_type": "text",
+      "difficulty": 7,
+      "text": "Qual o nome do personagem principal interpretado por Leonardo DiCaprio no filme 'O Lobo de Wall Street'?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Jordan Belfort",
+        "Jay Gatsby",
+        "Dominick Cobb",
+        "Howard Hughes"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": 80011,
+      "subtheme": "Filmes e Cinema",
+      "question_type": "text",
+      "difficulty": 3,
+      "text": "Qual a altura aproximada do King Kong no filme de 2005, dirigido por Peter Jackson?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "25",
+        "25 pés",
+        "25ft"
+      ]
+    },
+    {
+      "id": 80012,
+      "subtheme": "Filmes e Cinema",
+      "question_type": "text",
+      "difficulty": 8,
+      "text": "Qual filme é famoso pela frase 'May the Force be with you'?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "O Senhor dos Anéis",
+        "Matrix",
+        "Star Wars",
+        "Indiana Jones"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": 80013,
+      "subtheme": "Filmes e Cinema",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Qual o nome do robô companheiro de Wall-E no filme da Pixar?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "EVE",
+        "ROBY",
+        "AUTO",
+        "HAL 9000"
+      ],
+      "correct_index": 0
+    }
+  ]
+}

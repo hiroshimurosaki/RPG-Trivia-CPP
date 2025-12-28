@@ -1,0 +1,184 @@
+{
+  "category": "7. Esportes",
+  "questions": [
+    {
+      "id": 70001,
+      "subtheme": "Futebol Mundial",
+      "question_type": "text",
+      "difficulty": 4,
+      "text": "Qual país sediou a primeira Copa do Mundo da FIFA?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Brasil",
+        "Itália",
+        "Uruguai",
+        "França"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": 70002,
+      "subtheme": "Futebol Mundial",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Quantas Copas do Mundo a Seleção Brasileira de Futebol já venceu?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "5"
+      ]
+    },
+    {
+      "id": 70003,
+      "subtheme": "Futebol Mundial",
+      "question_type": "text",
+      "difficulty": 3,
+      "text": "Qual time é conhecido como 'Los Blancos'?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Barcelona",
+        "Real Madrid",
+        "Bayern de Munique",
+        "Manchester United"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": 70004,
+      "subtheme": "Futebol Mundial",
+      "question_type": "text",
+      "difficulty": 6,
+      "text": "Em que ano o Brasil sediou a Copa do Mundo pela segunda vez?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "2014"
+      ]
+    },
+    {
+      "id": 70005,
+      "subtheme": "Futebol Mundial",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Quem é o maior artilheiro da história das Copas do Mundo?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Pelé",
+        "Miroslav Klose",
+        "Ronaldo Fenômeno",
+        "Lionel Messi"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": 70006,
+      "subtheme": "Futebol Mundial",
+      "question_type": "text",
+      "difficulty": 4,
+      "text": "Qual jogador ganhou mais Bolas de Ouro?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Cristiano Ronaldo",
+        "Lionel Messi",
+        "Johan Cruyff",
+        "Michel Platini"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": 70007,
+      "subtheme": "Futebol Mundial",
+      "question_type": "text",
+      "difficulty": 7,
+      "text": "Qual é o nome do estádio do clube Boca Juniors?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Monumental de Núñez",
+        "La Bombonera",
+        "Camp Nou",
+        "San Siro"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": 70008,
+      "subtheme": "Futebol Mundial",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Qual país ganhou a Copa do Mundo FIFA de 2018?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Croácia",
+        "Bélgica",
+        "França",
+        "Inglaterra"
+      ],
+      "correct_index": 2
+    },
+    {
+      "id": 70009,
+      "subtheme": "Futebol Mundial",
+      "question_type": "text",
+      "difficulty": 8,
+      "text": "Quantas vezes a Itália venceu a Copa do Mundo?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "4"
+      ]
+    },
+    {
+      "id": 70010,
+      "subtheme": "Futebol Mundial",
+      "question_type": "text",
+      "difficulty": 6,
+      "text": "Quem é o treinador que comandou a seleção espanhola na conquista da Copa do Mundo de 2010?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Vicente del Bosque",
+        "Luis Aragonés",
+        "Pep Guardiola",
+        "José Mourinho"
+      ],
+      "correct_index": 0
+    },
+    {
+      "id": 70011,
+      "subtheme": "Futebol Mundial",
+      "question_type": "text",
+      "difficulty": 4,
+      "text": "Qual é a seleção com mais participações em Copas do Mundo?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "Alemanha",
+        "Brasil",
+        "Argentina",
+        "Itália"
+      ],
+      "correct_index": 1
+    },
+    {
+      "id": 70012,
+      "subtheme": "Futebol Mundial",
+      "question_type": "text",
+      "difficulty": 9,
+      "text": "Em que ano ocorreu o 'Milagre de Berna', quando a Alemanha Ocidental venceu a Hungria na final da Copa do Mundo?",
+      "answer_type": "text_input",
+      "valid_answers": [
+        "1954"
+      ]
+    },
+    {
+      "id": 70013,
+      "subtheme": "Futebol Mundial",
+      "question_type": "text",
+      "difficulty": 5,
+      "text": "Qual a nickname da Seleção Argentina de Futebol?",
+      "answer_type": "multiple_choice",
+      "options": [
+        "La Celeste",
+        "Os Leões",
+        "La Albiceleste",
+        "Os Diabos Vermelhos"
+      ],
+      "correct_index": 2
+    }
+  ]
+}
